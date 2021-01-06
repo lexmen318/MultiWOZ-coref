@@ -36,5 +36,22 @@ The two models, SUMBT and TRADE, used in the experiment of the paper can be acce
 SUMBT: https://github.com/SKTBrain/SUMBT <br/>
 TRADE: https://github.com/jasonwu0731/trade-dst <br/>
 
-Please use the scripts provided by the two models to format the data appropriately before you run the models. The ontology comes with MultiWOZ-coref is based on the version in MultiWOZ 2.1 and can be directly used for the above two models. The only difference is the format of slot names. Please note that you can freely build up your own ontology.
+Please use the scripts provided by the two models to format the data appropriately before you run the models. The ontology comes with MultiWOZ 2.3 is based on the version in MultiWOZ 2.1 and can be directly used for the above two models. The only difference is the format of slot names. Please note that you can freely build up your own ontology.
 
+## More experiments
+On availability, we test our dataset on different DST models.
+
+| DST Model | MultiWOZ 2.1 | MultiWOZ 2.2 | MultiWOZ 2.3 |
+| --------- | ------------ | ------------ | ------------ |
+| TRADE | 46.0% | 45.4% | 49.2% |
+| SUMBT | 49.2% | 49.7% | 52.9% |
+| COMER | 48.8% | -- | 50.2% |
+| DSTQA | 51.2% | --| 51.8% |
+| SOM-DST | 53.1% | -- | 55.5% |
+| TripPy | 55.3% |  -- | 63.0% |
+| SimpleTOD* | 50.3% (55.7%) | -- | 51.3% |
+| ConvBERT-DG-Multi | 58.7% | -- | 67.9% |
+| SAS | 54.5% | -- | 58.0% |
+
+Please note that "--" means that no performence reported.
+* in SimpleTOD means that we only run the code for DST. In the SimpleTOD github: https://github.com/salesforce/simpletod, the claimed joint accuracy (55.7% in the above table) is achieved by ignoring `dontcare` and `none`, which is unfair. If `dontcare` and `none` are included, the joint accuracy is 50.3%, reported from issue #5 and issue #8.
