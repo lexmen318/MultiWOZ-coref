@@ -53,5 +53,4 @@ On availability, we test our dataset on different DST models.
 | ConvBERT-DG-Multi | 58.7% | -- | 67.9% |
 | SAS | 54.5% | -- | 58.0% |
 
-Please note that "--" means that no performence reported.
-* in SimpleTOD means that we only run the code for DST. In the SimpleTOD github: https://github.com/salesforce/simpletod, the claimed joint accuracy (55.7% in the above table) is achieved by ignoring `dontcare` and `none`, which is unfair. If `dontcare` and `none` are included, the joint accuracy is 50.3%, reported from issue #5 and issue #8.
+Please note that "--" means that no performence reported. * in SimpleTOD means that we only run the code for DST by keeping `dontcare` and `none`. For further details, please refer to the github: https://github.com/salesforce/simpletod.
