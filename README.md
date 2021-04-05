@@ -43,7 +43,7 @@ On availability, we test our dataset on different DST models.
 
 | DST Model | MultiWOZ 2.1 | MultiWOZ 2.2 | MultiWOZ 2.3 |
 | --------- | ------------ | ------------ | ------------ |
-| TRADE | 46.0% | 45.4% | 49.2% |
+| TRADE(https://github.com/jasonwu0731/trade-dst) | 46.0% | 45.4% | 49.2% |
 | SUMBT | 49.2% | 49.7% | 52.9% |
 | COMER | 48.8% | -- | 50.2% |
 | DSTQA | 51.2% | --| 51.8% |
