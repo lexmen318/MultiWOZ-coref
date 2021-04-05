@@ -39,7 +39,7 @@ TRADE: https://github.com/jasonwu0731/trade-dst <br/>
 Please use the scripts provided by the two models to format the data appropriately before you run the models. The ontology comes with MultiWOZ 2.3 is based on the version in MultiWOZ 2.1 and can be directly used for the above two models. The only difference is the format of slot names. Please note that you can freely build up your own ontology.
 
 ## More experiments
-On availability, we test our dataset on different DST models.
+On availability, we test our dataset on different DST models. Process scripts for different DST models remain unchanged and are available from their githubs.
 
 | DST Model | MultiWOZ 2.1 | MultiWOZ 2.2 | MultiWOZ 2.3 |
 | --------- | ------------ | ------------ | ------------ |
