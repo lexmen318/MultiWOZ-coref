@@ -51,6 +51,6 @@ On availability, we test our dataset on different DST models.
 | TripPy | 55.3% |  -- | 63.0% |
 | SimpleTOD* | 50.3% (55.7%) | -- | 51.3% |
 | ConvBERT-DG-Multi | 58.7% | -- | 67.9% |
-| SAS | 54.5% | -- | 58.0% |
+| SAVN | 54.5% | -- | 58.0% |
 
 Please note that "--" means that no performence reported. * in SimpleTOD means that we only run the code for DST by keeping `dontcare` and `none`. For further details, please refer to the github: https://github.com/salesforce/simpletod.
