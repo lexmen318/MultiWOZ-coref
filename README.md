@@ -44,13 +44,13 @@ On availability, we test our dataset on different DST models.
 | DST Model | MultiWOZ 2.1 | MultiWOZ 2.2 | MultiWOZ 2.3 |
 | --------- | ------------ | ------------ | ------------ |
 | [TRADE](https://github.com/jasonwu0731/trade-dst) | 46.0% | 45.4% | 49.2% |
-| SUMBT | 49.2% | 49.7% | 52.9% |
-| COMER | 48.8% | -- | 50.2% |
-| DSTQA | 51.2% | --| 51.8% |
-| SOM-DST | 53.1% | -- | 55.5% |
-| TripPy | 55.3% |  -- | 63.0% |
-| SimpleTOD* | 50.3% (55.7%) | -- | 51.3% |
-| ConvBERT-DG-Multi | 58.7% | -- | 67.9% |
-| SAVN | 54.5% | -- | 58.0% |
+| [SUMBT](https://github.com/SKTBrain/SUMBT) | 49.2% | 49.7% | 52.9% |
+| [COMER](https://github.com/renll/ComerNet) | 48.8% | -- | 50.2% |
+| [DSTQA](https://github.com/alexa/dstqa) | 51.2% | --| 51.8% |
+| [SOM-DST](https://github.com/clovaai/som-dst) | 53.1% | -- | 55.5% |
+| [TripPy](https://gitlab.cs.uni-duesseldorf.de/general/dsml/trippy-public) | 55.3% |  -- | 63.0% |
+| [SimpleTOD*](https://github.com/salesforce/simpletod) | 50.3% (55.7%) | -- | 51.3% |
+| [ConvBERT-DG-Multi](https://github.com/alexa/dialoglue) | 58.7% | -- | 67.9% |
+| [SAVN](https://github.com/wyxlzsq/savn) | 54.5% | -- | 58.0% |
 
 Please note that "--" means that no performence reported. * in SimpleTOD means that we only run the code for DST by keeping `dontcare` and `none`. For further details, please refer to the github: https://github.com/salesforce/simpletod.
