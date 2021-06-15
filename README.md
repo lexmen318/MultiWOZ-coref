@@ -1,6 +1,6 @@
-# MultiWOZ-coref
+# MultiWOZ 2.3
 
-MultiWOZ-coref adds co-reference annotations in addition to corrections of dialogue acts and dialogue states. Please refer to the following paper to get more details:
+MultiWOZ 2.3 adds co-reference annotations in addition to corrections of dialogue acts and dialogue states. Please refer to the following paper to get more details:
 **MultiWOZ 2.3: A multi-domain task-oriented dialogue dataset enhanced with annotation corrections and co-reference annotation**. [[PDF]](https://arxiv.org/abs/2010.05594) (Jun. 14, 2021 updated)
 
 If you find our dataset useful and use in your work, please cite the following paper. The bibtex is listed below
