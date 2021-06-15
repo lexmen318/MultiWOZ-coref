@@ -1,18 +1,18 @@
 # MultiWOZ-coref
 
 MultiWOZ-coref adds co-reference annotations in addition to corrections of dialogue acts and dialogue states. Please refer to the following paper to get more details:
-**MultiWOZ-coref: A multi-domain task-oriented dataset enhanced with annotation corrections and co-reference annotation**. 
-[[PDF]](https://arxiv.org/abs/2010.05594)
+**MultiWOZ 2.3: A multi-domain task-oriented dialogue dataset enhanced with annotation corrections and co-reference annotation**. [[PDF]](https://arxiv.org/abs/2010.05594) (Jun. 14, 2021 updated)
 
 If you find our dataset useful and use in your work, please cite the following paper. The bibtex is listed below
 <pre>
 @article{han2020multiwoz,
-  title={MultiWOZ-coref: A multi-domain task-oriented dataset enhanced with annotation corrections and co-reference annotation},
-  author={Han, Ting and Liu, Ximing and Takanobu, Ryuichi and Lian, Yixin and Huang, Chongxuan and Peng, Wei and Huang, Minlie},
+  title={MultiWOZ 2.3: A multi-domain task-oriented dialogue dataset enhanced with annotation corrections and co-reference annotation},
+  author={Han, Ting and Liu, Ximing and Takanobu, Ryuichi and Lian, Yixin and Huang, Chongxuan and Wan, Dazhen and Peng, Wei and Huang, Minlie},
   journal={arXiv preprint arXiv:2010.05594},
   year={2020}
 }
 </pre>
+
 ## Dataset
 
 Three files are included in the zip file:
@@ -28,6 +28,37 @@ Except for the corrected and co-reference annotations, we also made the followin
 1. The field of "turn_id" is added to all utterances so that they could be referred in co-reference annotations.
 2. There are five dialogues having no "dialogue_act" annotations in MultiWOZ 2.1. These dialogues are annotated manually one by one in MultiWOZ-coref 
 3. Fixed some garbage characters inside MultiWOZ 2.1
+4. The field of "new_goal" is added to all dialogues. The new goal annotations are extracted from the goal descriptions. Note that, "book" and "fail_book" ("info" and "fail_info") are merged, and redundant domains are removed.
+
+```json
+// goal
+{
+    "restaurant": {
+        "fail_book": {
+            "time": "18:30"
+        },
+        "book": {
+            "time": "17:30",
+            "people": "8"
+        }
+    },
+    "train": {}
+}
+```
+
+```json
+// new_goal
+{
+    "restaurant": {
+        "book": {
+            "time": ["18:30", "17:30"],
+            "people": ["8"]
+        }
+    }
+}
+```
+
+
 
 ## Experiment
 
