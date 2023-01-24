@@ -85,5 +85,6 @@ On availability, we test our dataset on different DST models. Process scripts fo
 | [SimpleTOD*](https://github.com/salesforce/simpletod) | 50.3% (55.7%) | -- | 51.3% |
 | [ConvBERT-DG-Multi](https://github.com/alexa/dialoglue) | 58.7% | -- | 67.9% |
 | [SAVN](https://github.com/wyxlzsq/savn) | 54.5% | -- | 58.0% |
+| [PrefineDST](https://github.com/wise-east/checkdst) | 53.8% |--| 55.7% |
 
 Please note that "--" means that no performence reported. * in SimpleTOD means that we only run the code for DST by keeping `dontcare` and `none`. For further details, please refer to the github: https://github.com/salesforce/simpletod.
